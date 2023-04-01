@@ -9,6 +9,8 @@ public class ButtonRaycaster : MonoBehaviour
     public bool drawDebugRaycasts = false;
     public LayerMask groundLayer;
 
+	[SerializeField] private float vButtonOffset;
+
     private float groundCheck = 0.1f;
 
     // Start is called before the first frame update
@@ -18,9 +20,9 @@ public class ButtonRaycaster : MonoBehaviour
     }
 
     // FixedUpdate is called once per Tick
-    void FixedUpdate()
+    void Update()
     {
-        buttonPressed = Raycast(new Vector2(0, 0), Vector2.up, groundCheck);
+        buttonPressed = Raycast(new Vector2(0, vButtonOffset), Vector2.up, groundCheck);
     }
 
 #region "Raycast functions"

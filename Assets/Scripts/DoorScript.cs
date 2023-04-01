@@ -8,7 +8,7 @@ public class DoorScript : MonoBehaviour
 	public GameObject key;
 	public Collider2D door;
 
-	void FixedUpdate()
+	void Update()
 	{
 		if(GameObject.Find("Key") == null)
 		{

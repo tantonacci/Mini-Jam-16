@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
     private PlayerInput input;
     public LayerMask groundLayer;
     public LayerMask movableLayer;
+    public LayerMask buttontopLayer;
+    public LayerMask buttonbtmLayer;
     //public LayerMask enemyLayer;
 
     [SerializeField] private Rigidbody2D rbody;
@@ -224,7 +226,9 @@ public class PlayerController : MonoBehaviour
     RaycastHit2D Raycast(Vector2 offset, Vector2 rayDirection, float length) {
 		//Call the overloaded Raycast() method using the ground layermask and return 
 		//the results
-		return Raycast(offset, rayDirection, length, groundLayer | movableLayer);
+        LayerMask standingLayer = groundLayer | movableLayer | buttontopLayer | buttonbtmLayer;
+
+		return Raycast(offset, rayDirection, length, standingLayer);
 	}
 
 	RaycastHit2D Raycast(Vector2 offset, Vector2 rayDirection, float length, LayerMask mask) {

@@ -7,8 +7,9 @@ public class PlayerInput : MonoBehaviour
 
     [HideInInspector] public float horizontal;		//Float that stores horizontal input
     [HideInInspector] public float vertical;		//Float that stores vertical input
-	[HideInInspector] public bool jumpHeld;			//Bool that stores jump pressed
-	[HideInInspector] public bool jumpPressed;		//Bool that stores jump held
+	[HideInInspector] public bool jumpHeld;			//Bool that stores jump held
+	[HideInInspector] public bool jumpPressed;		//Bool that stores jump pressed
+	[HideInInspector] public bool resetPressed;		//Bool that stores jump pressed
 
 	bool readyToClear;								//Bool used to keep input in sync
 
@@ -53,6 +54,7 @@ public class PlayerInput : MonoBehaviour
 		vertical		= 0f;
 		jumpPressed		= false;
 		jumpHeld		= false;
+		resetPressed 	= false;
 
 		readyToClear	= false;
 	}
@@ -66,5 +68,6 @@ public class PlayerInput : MonoBehaviour
 		//Accumulate button inputs
 		jumpPressed		= jumpPressed || Input.GetButtonDown("Jump");
 		jumpHeld		= jumpHeld || Input.GetButton("Jump");
+		resetPressed 	= resetPressed || Input.GetButtonDown("Reset");
 	}
 }
