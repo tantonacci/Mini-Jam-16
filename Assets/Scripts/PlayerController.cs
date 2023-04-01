@@ -95,6 +95,11 @@ public class PlayerController : MonoBehaviour
         } else if (dying) {
             playerDeath();
         }
+		
+		if(inFanArea)
+		{
+			rbody.AddForce(fanArea.GetComponent<FanBlower>().direction * fanArea.GetComponent<FanBlower>().strength);
+		}
     }
 
 #endregion
@@ -116,7 +121,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+	public bool inFanArea = false;
+	public GameObject fanArea;
+	
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if(col.gameObject.tag == "wind")
+		{
+			fanArea = col.gameObject;
+			inFanArea = true;
+		}
+	}
+	void OnTriggerExit2D(Collider2D col)
+	{
+		if(col.gameObject.tag == "wind")
+		{
+			inFanArea = false;
+		}
+	}
+	
 
 #endregion
 
