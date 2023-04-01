@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 1196170217}
   - component: {fileID: 1196170216}
   - component: {fileID: 1196170215}
+  - component: {fileID: 1196170218}
   m_Layer: 14
   m_Name: Button
   m_TagString: Untagged
@@ -294,6 +295,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &1196170218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196170213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d83123a0f548e408960982b2c8b228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPressed: 0
+  drawDebugRaycasts: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1981125998649301371
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3477512516156905918}
   - component: {fileID: 540083787}
+  - component: {fileID: 540083789}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -380,3 +399,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &540083789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981125998649301371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4ab5af00bdb754eb77289ab5360aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPressed: 0
+  btnBody: {fileID: 1196170213}
