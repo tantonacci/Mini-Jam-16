@@ -10,17 +10,8 @@ public class KeyScript : MonoBehaviour
 	// Called when the key collides with another object
     void OnTriggerEnter2D(Collider2D col)
     {
-
-
-
-		//PlayerController player = col.GetComponent<PlayerController>();
 		if (col.CompareTag("Player")) {
 			Destroy(gameObject);
 		}
-		
-		//if(player != null)
-		//{
-			//put the destroy here if it works
-		//}
     }
 }
