@@ -92,7 +92,11 @@ InputManager:
     negativeButton: 
     positiveButton: space
     altNegativeButton: 
+<<<<<<< HEAD
     altPositiveButton: w
+=======
+    altPositiveButton: up
+>>>>>>> orange
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
