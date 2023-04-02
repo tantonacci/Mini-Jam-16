@@ -8,6 +8,7 @@ public class FakeKeyScript : MonoBehaviour
 	[SerializeField] private GameObject exit;
 	private SceneChange sceneChange;
 	public AudioSource audioSource;
+	public bool played;
 	
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,12 @@ public class FakeKeyScript : MonoBehaviour
     {
         if(GameObject.Find("Key") == null)
 		{
-			audioSource.enabled = true;
-			audioSource.Play();
+			if(!audioSource.isPlaying && played == false)
+			{
+				audioSource.enabled = true;
+				audioSource.Play();	
+				played = true;
+			}
 			fakeKeySprite.enabled = true;
 		}
 		if(sceneChange.opening)
