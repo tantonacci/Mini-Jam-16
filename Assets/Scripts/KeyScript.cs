@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-
-	public LayerMask playerLayer;
-
 	// Called when the key collides with another object
     void OnTriggerEnter2D(Collider2D col)
     {

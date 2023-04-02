@@ -39,7 +39,7 @@ public class PlaceableObject : MonoBehaviour
 
     void followMouse() {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = -1;
+        mousePosition.z = onCorkboard ? -1 : -.1f;
         transform.position = mousePosition;
     }
 
@@ -61,7 +61,7 @@ public class PlaceableObject : MonoBehaviour
     }
 
     void OnTriggerStay2D(Collider2D col) {
-        if (col.gameObject.layer == (col.gameObject.layer | 1 << corkboardLayer)) {
+        if (isHeld && col.gameObject.layer == (col.gameObject.layer | 1 << corkboardLayer)) {
             onCorkboard = true;
         }
     }
