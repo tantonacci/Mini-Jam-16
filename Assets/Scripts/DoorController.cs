@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
 
+    public bool invert;
+
     [SerializeField] private GameObject button;
     private Animator animator;
     private BoxCollider2D boxCollider;
@@ -25,6 +27,10 @@ public class DoorController : MonoBehaviour
     void Update()
     {
         open = buttonPress.buttonPressed;
+        if (invert) {
+            open = !open;
+        }
+
         boxCollider.enabled = !open;
 
         SendAnimation("Open", open);
