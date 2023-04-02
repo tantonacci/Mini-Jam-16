@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1881094970}
   m_Layer: 3
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,7 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abafa96cbe43e4545bc2108e94462b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exit: {fileID: 8480701016684868531, guid: e4417d3a45cb2e44eb354e4f92a63b2e, type: 3}
+  exit: {fileID: 0}
+  audioSource: {fileID: 887180161, guid: 2cda990e2423bbf4892e6590ba056729, type: 2}
 --- !u!1 &363841812580645477
 GameObject:
   m_ObjectHideFlags: 0

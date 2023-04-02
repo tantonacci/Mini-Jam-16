@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1196170218, guid: 6ce52726aff86c84e858735e9947b269, type: 3}
-      propertyPath: vButtonOffset
-      value: -1.43
-      objectReference: {fileID: 0}
     - target: {fileID: 1981125998649301371, guid: 6ce52726aff86c84e858735e9947b269, type: 3}
       propertyPath: m_Name
       value: Button
@@ -322,27 +318,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8480701016684868531, guid: e4417d3a45cb2e44eb354e4f92a63b2e, type: 3}
   m_PrefabInstance: {fileID: 8936892913667120215}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &524507887
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524507881}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d9d61b5495eb7954ea4ba82870db4ee0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &591739500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -527,37 +502,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97a635a4de7ce9c4c9275dc46535c1fc, type: 3}
---- !u!1 &1051383014 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2053689071, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-  m_PrefabInstance: {fileID: 1435689289}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1051383017
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051383014}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1001 &1266908531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -565,10 +509,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1881094967, guid: c974ba593c842464e9bf2a4794c88001, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 22426443484580109, guid: c974ba593c842464e9bf2a4794c88001, type: 3}
       propertyPath: fanArea
       value: 
@@ -581,10 +521,6 @@ PrefabInstance:
       propertyPath: exit
       value: 
       objectReference: {fileID: 524507881}
-    - target: {fileID: 7594507401324789879, guid: c974ba593c842464e9bf2a4794c88001, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 887180161}
     - target: {fileID: 8114401342174516670, guid: c974ba593c842464e9bf2a4794c88001, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -708,30 +644,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1482543166, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-      propertyPath: m_Layer
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510567471, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-      propertyPath: m_Size.x
-      value: 22.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510567471, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-      propertyPath: m_Size.y
-      value: 31.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510567471, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510567471, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2053689071, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2232423466525075790, guid: c04b50c9eb999df4dbc2c50a0b312c43, type: 3}
       propertyPath: player
       value: 
@@ -800,10 +712,6 @@ PrefabInstance:
     - target: {fileID: 783852059373215913, guid: 79d42e762b6b16f4cbaf2b8ef2f7f0e8, type: 3}
       propertyPath: m_Name
       value: Door
-      objectReference: {fileID: 0}
-    - target: {fileID: 783852059373215913, guid: 79d42e762b6b16f4cbaf2b8ef2f7f0e8, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6634304347519243534, guid: 79d42e762b6b16f4cbaf2b8ef2f7f0e8, type: 3}
       propertyPath: m_RootOrder
@@ -1098,10 +1006,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 688470445, guid: e4417d3a45cb2e44eb354e4f92a63b2e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 1115852267, guid: e4417d3a45cb2e44eb354e4f92a63b2e, type: 3}
       propertyPath: key
       value: 
