@@ -331,6 +331,9 @@ MonoBehaviour:
   buttonbtmLayer:
     serializedVersion: 2
     m_Bits: 32768
+  placeableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   rbody: {fileID: 400678603}
   animator: {fileID: 400678606}
 --- !u!114 &400678605
