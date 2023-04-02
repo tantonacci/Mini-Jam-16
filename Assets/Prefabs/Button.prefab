@@ -305,7 +305,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  vButtonOffset: -1.48
+  vButtonOffset: -1.43
 --- !u!60 &16429203
 PolygonCollider2D:
   m_ObjectHideFlags: 0
