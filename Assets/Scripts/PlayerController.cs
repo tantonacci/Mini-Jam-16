@@ -95,11 +95,11 @@ public class PlayerController : MonoBehaviour
         } else if (dying) {
             playerDeath();
         }
-		
+		/*
 		if(inFanArea)
 		{
 			rbody.AddForce(fanArea.GetComponent<FanBlower>().direction * fanArea.GetComponent<FanBlower>().strength);
-		}
+		}*/
     }
 
 #endregion
@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
             SetGrounded(false);
         }
     }
-
+/*
 	public bool inFanArea = false;
 	public GameObject fanArea;
 	
@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
 		{
 			inFanArea = false;
 		}
-	}
+	}*/
 	
 
 #endregion
