@@ -581,6 +581,10 @@ PrefabInstance:
       propertyPath: exit
       value: 
       objectReference: {fileID: 524507881}
+    - target: {fileID: 7594507401324789879, guid: c974ba593c842464e9bf2a4794c88001, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 887180161}
     - target: {fileID: 8114401342174516670, guid: c974ba593c842464e9bf2a4794c88001, type: 3}
       propertyPath: m_RootOrder
       value: 5
