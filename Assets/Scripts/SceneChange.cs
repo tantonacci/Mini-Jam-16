@@ -16,15 +16,18 @@ public class SceneChange : MonoBehaviour
 	{
 		if(GameObject.Find("Key") == null)
 		{
-			animator.SetTrigger("OpenDoor");
-			animationTime = Time.time + animationDuration;
-			opening = true;
+			if (col.CompareTag("Player"))
+			{
+				animator.SetTrigger("OpenDoor");
+				animationTime = Time.time + animationDuration;
+				opening = true;
+			}
 		}
 		
 	}
 	void OnTriggerStay2D(Collider2D col)
 	{
-		if((GameObject.Find("Key") == null) && (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0)))
+		if((GameObject.Find("Key") == null) && (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0)) && (col.CompareTag("Player")))
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
