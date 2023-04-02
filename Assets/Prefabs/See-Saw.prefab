@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4496780433267499341}
   - component: {fileID: 1884091691}
   - component: {fileID: 1884091695}
-  m_Layer: 6
+  - component: {fileID: 427598850}
+  m_Layer: 10
   m_Name: See-Saw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,3 +155,21 @@ SpringJoint2D:
   m_Distance: 0.005
   m_DampingRatio: 1
   m_Frequency: 0.3
+--- !u!114 &427598850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951444566043450700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6c19e9652ed394daa090abf93d706c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCorkboard: 0
+  isHeld: 0
+  corkboardLayer:
+    serializedVersion: 2
+    m_Bits: 131072
+  corkboard: {fileID: 0}
